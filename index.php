@@ -10,10 +10,24 @@ require_once("config.php");
 // echo json_encode($usuarios);
 
 
-$root = new Usuario();
+//carrega um usuario
+// $root = new Usuario();
 
-$root->loadById(1);
+// $root->loadById(1);
 
-echo $root;
+// echo $root;
+
+
+//carrega a lista 
+// $lista = Usuario::getList();
+
+// echo json_encode($lista)
+
+
+//carrega um lista de usuarios buscando pelo login
+
+$busca = Usuario::search("salete");
+
+echo json_encode($busca)
 
 ?>
